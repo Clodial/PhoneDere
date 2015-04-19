@@ -10,17 +10,18 @@
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>PhoneDere</title>
     </head>
-    <body>
+    <body style="overflow:hidden;">
         <div id="whole-app">
         	<div id="desu-faces">
-        		<a class="desu-section desu-active" href="#"><h3>DAN</h3></a
-        		><a class="desu-section" href="#"><h3>DERE</h3></a
-        		><a class="desu-section" href="#"><h3>KUU</h3></a
-        		><a class="desu-section" href="#"><h3>TSUN</h3></a
-        		><a class="desu-section" href="#"><h3>YAN</h3></a>
+        		<a id="deredere" class="desu-section desu-active" href="#"><h3>DERE</h3></a
+        		><a id="dandere" class="desu-section" href="#"><h3>DAN</h3></a
+        		><a id="kuudere" class="desu-section" href="#"><h3>KUU</h3></a
+        		><a id="tsundere" class="desu-section" href="#"><h3>TSUN</h3></a
+        		><a id="yandere" class="desu-section" href="#"><h3>YAN</h3></a>
         		<div class="clear"></div>
         	</div>
             <div id="top-header">
+            	<h3>Hi, Senpai!</h3>
             	<div class="top-arrow"></div>
             </div>
             <div id="face">
@@ -28,7 +29,7 @@
             </div>
             <div id="submit">
                 <form>
-                    <label>Senpai, how do you feel about me? ~desu</label>
+                    <label id="senpaiLovesYou">Senpai, how do you feel around me? ~desu</label>
                     <input class="submit-text" type="text" placeholder="Do You Love Me?">
                     <input class="submit-button" type="submit" value="Submit Feeling">
                 </form>

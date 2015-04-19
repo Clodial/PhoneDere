@@ -2,15 +2,19 @@
     font-family:"boldfont";
     src:url('../font/theboldfont.ttf');
 }
+@font-face{
+    font-family:"frank";
+    src:url('../font/franklin.ttf');
+}
 /******
 
 Color Guide:
 
-Tsundere
-Yandere
-Kuudere
-Deredere
-Dandere
+Tsundere ffff33
+Yandere  ff3366
+Kuudere  3366cc
+Deredere ff33ff
+Dandere  cc3399
 Himedere
 
 /*******
@@ -34,7 +38,7 @@ body{
     margin:0;
     background-color:white;
     height:auto;
-    font-family:"boldfont",Helvetica,sans-serif;
+    font-family:"frank",Helvetica,sans-serif;
 }
 
 input{
@@ -73,10 +77,7 @@ sec0 Dere Type
 }
 .desu-section:hover{
     color:white;
-    background-color:#ff33ff;
-}
-.desu:active{
-    background-color:#ff3366;
+    background-color:#33ff66;
 }
 .desu-section h3{
     position:relative;
@@ -84,7 +85,7 @@ sec0 Dere Type
 }
 .desu-active{
     color:white;
-    background-color:#ff3366;
+    background-color:#33ff66;
 }
 /******
 
@@ -96,14 +97,18 @@ sec1 Header section
     position:fixed;
     height:50px;
     width:100%;
-    background-color:#ff3366;
+    background-color:#33ff66;
     color:white;
     text-align:center;
 }
+#top-header h3{
+    position:relative;
+    top:12px;
+}
 .top-arrow{
     position:relative;
-    background-color:#ff3366;
-    top:40px;
+    background-color:#33ff66;
+    top:20px;
     height:20px;
     width:20px;
     left:50%;
@@ -150,11 +155,15 @@ form label{
     margin-bottom:5px;
 }
 .submit-text{
-
+    margin-top:10px;
 }
 .submit-button{
+    margin-top:10px;
     border:none;
-    background-color:white;
+    color:white;
+    height:25px;
+    width:100px;
+    background-color:#33ff66;
 }
 /******
 
@@ -166,7 +175,7 @@ sec4 navigation button
     width:100%;
     height:50px;
     top: calc(100%-50px);
-    background-color:#ff3366;
+    background-color:#33ff66;
 }
 /******
 
@@ -174,7 +183,6 @@ sec5 splash screen
 
 ******/
 #splashId{
-
     margin:0 auto;
     width:100%;
     height:700px;
@@ -185,4 +193,25 @@ sec5 splash screen
     top:50%;
     left:50%;
     -webkit-transform:translate(-50%,-50%);
+}
+#index-button{
+    margin:0 auto;
+    position:absolute;
+    top:75%;
+    left:50%;
+    -webkit-transform:translate(-50%,-50%);
+    background-color:#ff33ff;
+    color:white;
+    height:50px;
+    width:100px;
+    text-align:center;
+    border-radius:15px;
+}
+#index-button:hover{
+    background-color:#ff6633;
+    color:white;
+}
+#index-text{
+    position:relative;
+    top:12px;
 }
