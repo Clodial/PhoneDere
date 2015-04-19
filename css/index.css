@@ -10,7 +10,7 @@
 
 Color Guide:
 
-Tsundere ffff33
+Tsundere ff9933
 Yandere  ff3366
 Kuudere  3366cc
 Deredere ff33ff
@@ -48,7 +48,7 @@ input{
     width:100%;
     margin:0 auto;
     text-align:center;
-    height:auto;
+    height:1800px;
     background-color:#ff33ff;
 }
 .clear{

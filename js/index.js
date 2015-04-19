@@ -37,7 +37,7 @@ $("#kuudere").click(function(){
 $("#tsundere").click(function(){
     $(".desu-section").removeClass("desu-active");
     $("#tsundere").addClass("desu-active");
-    $("#whole-app").css("background-color","#ffff33");
+    $("#whole-app").css("background-color","#ff9933");
     document.getElementById("senpaiLovesYou").innerHTML="Uhm, Senpai? How do you feel? About me? Not that I care.";
 });
 $("#yandere").click(function(){
