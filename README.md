@@ -5,11 +5,11 @@ Inspired by classic anime architypes, the app also features the ability to have 
 
 Currently, in terms of working terms:
 Technically, any word and sentence can affect the app, but only 6 words are able to really give you that "phone-dating" experience.
--happy
--sad
--angry
--weird
--love
--sexy
 
-All of these are case-sensitive, and they must all be just lowercase letters. 
+
+happy
+sad
+angry
+weird
+love
+sexy
