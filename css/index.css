@@ -1,3 +1,7 @@
+@font-face{
+    font-family:"boldfont";
+    src:url('../font/theboldfont.ttf');
+}
 /******
 
 Color Guide:
@@ -19,6 +23,9 @@ sec3: submit section
 sec4: navigation
 
 *******/
+h3{
+    display:inline;
+}
 a{
     text-decoration:none;
 }
@@ -27,6 +34,7 @@ body{
     margin:0;
     background-color:white;
     height:auto;
+    font-family:"boldfont",Helvetica,sans-serif;
 }
 
 input{
@@ -36,6 +44,11 @@ input{
     width:100%;
     margin:0 auto;
     text-align:center;
+    height:auto;
+    background-color:#ff33ff;
+}
+.clear{
+    clear:both;
 }
 /******
 
@@ -50,15 +63,27 @@ sec0 Dere Type
     clear:both;
 }
 .desu-section{
+    height:30px;
     display:inline-block;
+    border-right:1px solid white;
     width:20%;
     color:black;
+    background-color:white;
+    text-align:center;
 }
 .desu-section:hover{
     color:white;
     background-color:#ff33ff;
 }
 .desu:active{
+    background-color:#ff3366;
+}
+.desu-section h3{
+    position:relative;
+    top:5px;
+}
+.desu-active{
+    color:white;
     background-color:#ff3366;
 }
 /******
@@ -71,9 +96,19 @@ sec1 Header section
     position:fixed;
     height:50px;
     width:100%;
-    background-color:#ffaa33;
+    background-color:#ff3366;
+    color:white;
     text-align:center;
-    border-radius:5px;
+}
+.top-arrow{
+    position:relative;
+    background-color:#ff3366;
+    top:40px;
+    height:20px;
+    width:20px;
+    left:50%;
+    -webkit-transform:rotate(45deg);
+    webkit-transform:translateX(-50%);
 }
 /******
 
@@ -82,15 +117,15 @@ sec2 Face Section
 ******/
 #face{
     min-height:1px;
-    padding-top:50px;
+    padding-top:70px;
     width:100%;
     height:auto;
-    margin:0 auto;
+    margin:10px auto;
 }
 #face img{
-    width:auto;
-    height:auto;
-    margin:0 auto;
+    width:256px;
+    height:256px;
+    margin-bottom:10px;
 }
 
 /******
@@ -99,11 +134,27 @@ sec3 submit section
 
 ******/
 #submit{
-    width:100%;
+    border-radius:10px;
+    padding:10px;
+    margin:0 auto;
+    border:1px solid black;
+    width:250px;
+    background-color:white;
 }
 #submit form{
     margin:0 auto;
-    width:50%;
+    width:200px;
+}
+form label{
+    font-size:18px;
+    margin-bottom:5px;
+}
+.submit-text{
+
+}
+.submit-button{
+    border:none;
+    background-color:white;
 }
 /******
 
@@ -115,7 +166,7 @@ sec4 navigation button
     width:100%;
     height:50px;
     top: calc(100%-50px);
-    background-color:#ffaa33;
+    background-color:#ff3366;
 }
 /******
 
@@ -123,11 +174,10 @@ sec5 splash screen
 
 ******/
 #splashId{
-    
+
     margin:0 auto;
     width:100%;
-    min-height:540px;
-    height:auto;
+    height:700px;
 }
 #splash-center{
     margin:0 auto;
