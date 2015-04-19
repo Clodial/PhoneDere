@@ -49,8 +49,9 @@ $("#yandere").click(function(){
 
 //Crazy happy funtimes
 $(".submit-button").click(function(){
+    var check = $(".submit-text").val().toLowerCase();
 
-    if($(".submit-text").val() == "happy"){
+    if(check == "happy"){
         $(".blush").show();
         if($("#deredere").hasClass("desu-active")){
             document.getElementById("top-header-reaction").innerHTML ="Well, I'm happy with Senpai, too!";
@@ -90,7 +91,7 @@ $(".submit-button").click(function(){
             
         }
         $(".submit-text").val("");
-    }else if($(".submit-text").val() == "sad"){
+    }else if(check == "sad"){
         $(".blush").show();
         if($("#deredere").hasClass("desu-active")){
             document.getElementById("top-header-reaction").innerHTML ="Senpai, don't worry! I'm always here for you!";
@@ -131,7 +132,7 @@ $(".submit-button").click(function(){
            
         }
         $(".submit-text").val("");
-    }else if($(".submit-text").val() == "angry"){
+    }else if(check == "angry"){
         $(".blush").show();
         if($("#deredere").hasClass("desu-active")){
             document.getElementById("top-header-reaction").innerHTML ="Senpai, were my bentos that bad?";
@@ -173,7 +174,7 @@ $(".submit-button").click(function(){
             
         }
         $(".submit-text").val("");
-    }else if($(".submit-text").val() == "weird"){
+    }else if(check == "weird"){
         $(".blush").show();
         if($("#deredere").hasClass("desu-active")){
             document.getElementById("top-header-reaction").innerHTML ="Senpai? Stop that! That's weird.";
@@ -214,7 +215,7 @@ $(".submit-button").click(function(){
             
         }
         $(".submit-text").val("");
-    }else if($(".submit-text").val() == "love"){
+    }else if(check == "love"){
         $(".blush").show();
         if($("#deredere").hasClass("desu-active")){
             document.getElementById("top-header-reaction").innerHTML ="Oh, Senpai! You noticed me!";
@@ -253,7 +254,7 @@ $(".submit-button").click(function(){
         }
         
         $(".submit-text").val("");
-    }else if($(".submit-text").val() == "sexy"){
+    }else if(check == "sexy"){
         $(".blush").show();
         if($("#deredere").hasClass("desu-active")){
             document.getElementById("top-header-reaction").innerHTML ="Senpai, that's going a little too far.";
