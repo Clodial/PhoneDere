@@ -48,7 +48,7 @@ $("#yandere").click(function(){
 });
 
 //Crazy happy funtimes
-$(".submit-button").click(function(){
+$(".submit-button").bind("touchstart click",function(){
     var check = $(".submit-text").val().toLowerCase();
 
     if(check == "happy"){

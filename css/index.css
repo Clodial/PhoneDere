@@ -203,12 +203,19 @@ form label{
     margin-top:10px;
 }
 .submit-button{
+    margin:0 auto;
     margin-top:10px;
     border:none;
     color:white;
     height:25px;
     width:100px;
     background-color:#33ff66;
+    font-family:Helvetica,sans-serif;
+    font-size:12px;
+}
+.submit-button p{
+    position:relative;
+    top:5px;
 }
 /******
 
